@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact our law firm for a case evaluation with an experienced attorney. Get professional legal assistance for your needs.">
+  <meta name="author" content="Attorney at Law">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dolabellaadvocacia.site/contact.html">
+  <meta property="og:title" content="Contact Us | Law Firm">
+  <meta property="og:description" content="Get in touch with our experienced attorneys for professional legal assistance.">
+  <meta property="og:image" content="project-root/img/logo.png">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://dolabellaadvocacia.site/contact.html">
+  <meta property="twitter:title" content="Contact Us | Law Firm">
+  <meta property="twitter:description" content="Get in touch with our experienced attorneys for professional legal assistance.">
+  <meta property="twitter:image" content="project-root/img/logo.png">
+  <link rel="stylesheet" href="project-root/assets/styles/global.css">
+  <link rel="stylesheet" href="project-root/assets/styles/contact.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Tinos&display=swap">
+  <link rel="canonical" href="https://dolabellaadvocacia.site/contact.html">
+  <title>Contact Us | Law Firm | Schedule a Case Evaluation</title>
+  <link rel="icon" type="image/x-icon" href="project-root/img/favicons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="project-root/img/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="project-root/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="project-root/img/favicons/favicon-48x48.png">
+  <style>
+    /* Additional styles for contact page */
+    .contact-hero {
+      background: var(--gradiente-verde-escuro);
+      padding: 8rem 0;
+      margin-bottom: 6rem;
+      box-shadow: var(--box-shadow-padrao);
+    }
+
+    .contact-hero-content {
+      color: var(--texto-branco);
+      text-align: center;
+    }
+
+    .contact-hero-title {
+      font-size: 4.8rem;
+      margin-bottom: 2rem;
+    }
+
+    .contact-hero-subtitle {
+      font-size: 2.4rem;
+      max-width: 80rem;
+      margin: 0 auto;
+      line-height: 1.4;
+    }
+
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      margin-bottom: 8rem;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    .contact-info-title {
+      font-size: 3.2rem;
+      color: var(--texto-preto);
+      position: relative;
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .contact-info-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 8rem;
+      height: 0.4rem;
+      background-color: var(--verde);
+    }
+
+    .contact-method {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .contact-icon {
+      width: 4rem;
+      height: 4rem;
+      min-width: 4rem;
+      background-color: var(--verde);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: white;
+    }
+
+    .contact-text h3 {
+      font-size: 2rem;
+      color: var(--texto-preto);
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-text p, .contact-text a {
+      font-size: 1.8rem;
+      color: var(--texto-preto);
+      text-decoration: none;
+      line-height: 1.5;
+    }
+
+    .contact-text a:hover {
+      color: var(--verde);
+    }
+
+    .office-hours {
+      margin-top: 4rem;
+    }
+
+    .office-hours h3 {
+      font-size: 2.4rem;
+      color: var(--texto-preto);
+      margin-bottom: 1.5rem;
+      position: relative;
+      padding-bottom: 1rem;
+    }
+
+    .office-hours h3::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 5rem;
+      height: 0.3rem;
+      background-color: var(--verde);
+    }
+
+    .office-hours p {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+      max-width: 30rem;
+    }
+
+    .office-hours .day {
+      font-weight: 600;
+    }
+
+    /* Contact form styles */
+    .contact-form {
+      background: var(--branco);
+      padding: 4rem;
+      border-radius: 0.5rem;
+      box-shadow: var(--box-shadow-padrao);
+    }
+
+    .form-title {
+      font-size: 3.2rem;
+      color: var(--texto-preto);
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 2.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 1.8rem;
+      margin-bottom: 0.8rem;
+      color: var(--texto-preto);
+      font-weight: 500;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 1.5rem;
+      font-size: 1.6rem;
+      border: 1px solid #d1d1d1;
+      border-radius: 0.4rem;
+      background-color: white;
+      transition: border-color 0.2s ease;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--verde);
+      box-shadow: 0 0 0 2px rgba(58, 110, 165, 0.2);
+    }
+
+    textarea.form-control {
+      min-height: 15rem;
+      resize: vertical;
+    }
+
+    .submit-btn {
+      display: block;
+      width: 100%;
+      background: var(--gradiente-verde);
+      color: white;
+      font-size: 2rem;
+      font-weight: 600;
+      padding: 1.5rem;
+      border: none;
+      border-radius: 0.4rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-align: center;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 6px;
+    }
+
+    .submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px;
+    }
+
+    .form-note {
+      font-size: 1.4rem;
+      color: #666;
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    /* Responsive styles */
+    @media screen and (max-width: 1040px) {
+      .contact-hero-title {
+        font-size: 4rem;
+      }
+      
+      .contact-hero-subtitle {
+        font-size: 2.2rem;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .contact-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .contact-hero {
+        padding: 6rem 0;
+        position: relative;
+        top: -15rem;
+      }
+      
+      .contact-hero-title {
+        font-size: 3.5rem;
+      }
+      
+      .contact-hero-subtitle {
+        font-size: 2rem;
+      }
+      
+      .contact-form {
+        padding: 3rem 2rem;
+        order: -1;
+        position: relative;
+        top: -10rem;
+      }
+      
+      .form-title {
+        font-size: 2.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="container menu">
+    <nav aria-label="Main menu" class="menu-container">
+      <div class="logo" aria-label="Law Firm Logo"></div>
+      <div class="mobile">
+        <div class="menu-icon" aria-label="Open menu" id="menu-icon" role="button" tabindex="0">
+          <div></div><div></div><div></div>
+        </div>
+        <div class="menu">
+          <ul class="menu-links" id="menu-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#sobre">About</a></li>
+            <li><a href="index.html#areas">Practice Areas</a></li>
+            <li><a href="contact.html" class="current" aria-current="page">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="desktop">
+        <ul class="menu-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#sobre">About</a></li>
+          <li><a href="index.html#areas">Practice Areas</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="contact-hero">
+    <div class="container">
+      <div class="contact-hero-content">
+        <h1 class="contact-hero-title">Get in Touch</h1>
+        <p class="contact-hero-subtitle">Contact our law firm today to speak with an experienced attorney for a case evaluation.</p>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+    <div class="contact-container">
+      <div class="contact-info">
+        <div>
+          <h2 class="contact-info-title">Our Contact Information</h2>
+          
+          <div class="contact-method">
+            <div class="contact-icon">
+              <span>📍</span>
+            </div>
+            <div class="contact-text">
+              <h3>Address</h3>
+              <p>123 Legal Avenue, Suite 400<br>Your City, State, ZIP</p>
+            </div>
+          </div>
+          
+          <div class="contact-method">
+            <div class="contact-icon">
+              <span>📱</span>
+            </div>
+            <div class="contact-text">
+              <h3>Phone</h3>
+              <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-method">
+            <div class="contact-icon">
+              <span>💬</span>
+            </div>
+            <div class="contact-text">
+              <h3>WhatsApp</h3>
+              <p><a href="https://wa.me/5535991561121" rel="noopener" target="_blank">(35) 9156-1121</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-method">
+            <div class="contact-icon">
+              <span>✉️</span>
+            </div>
+            <div class="contact-text">
+              <h3>Email</h3>
+              <p><a href="mailto:example@email.com">example@email.com</a></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="office-hours">
+          <h3>Office Hours</h3>
+          <p><span class="day">Monday - Friday:</span> <span>9AM–12PM / 2PM–6PM</span></p>
+          <p><span class="day">Saturday:</span> <span>By appointment only</span></p>
+          <p><span class="day">Sunday:</span> <span>Closed</span></p>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h2 class="form-title">Send Us a Message</h2>
+        <form id="contactForm" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Full Name*</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address*</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" class="form-control">
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject*</label>
+            <input type="text" id="subject" name="subject" class="form-control" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Your Message*</label>
+            <textarea id="message" name="message" class="form-control" required></textarea>
+          </div>
+          
+          <button type="submit" class="submit-btn basic-hover">Send Message</button>
+          
+          <p class="form-note">* Required fields. We'll get back to you as soon as possible.</p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <section class="mapa" id="localizacao">
+    <div class="mapa-container container">
+      <h2 class="h2-subtitle">Our Location</h2>
+      <div class="mapa-google">
+        <iframe allowfullscreen aria-label="Office location map" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2909.029545145753!2d-72.51802368453823!3d43.62382697912165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb4c9f1303bd32b%3A0xde8c2a04a91822f!2sWoodstock%20Law%20Group!5e0!3m2!1sen!2sus!4v1683568423814!5m2!1sen!2sus" 
+          style="border:0" title="Office location" width="100%">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-links">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#areas">Practice Areas</a></li>
+            <li><a href="index.html#sobre">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-areas">
+          <h3>Practice Areas</h3>
+          <ul>
+            <li><a href="pages/direitocivil.html">Civil Law</a></li>
+            <li><a href="pages/direitotrabalhista.html">Employment Law</a></li>
+            <li><a href="pages/direitopenal.html">Criminal Law</a></li>
+            <li><a href="pages/direitoprevidenciario.html">Social Security Law</a></li>
+          </ul>
+        </div>
+        <div class="footer-contato">
+          <h3>Contact</h3>
+          <address>
+            <p><strong>Address:</strong> 123 Legal Avenue, Suite 400</p>
+            <p>Your City, State, ZIP</p>
+            <p><strong>Hours:</strong> Monday–Friday, 9AM–12PM / 2PM–6PM</p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/5535991561121" rel="noopener" target="_blank">(35) 9156-1121</a></p>
+            <p><strong>Email:</strong> <a href="mailto:example@email.com">example@email.com</a></p>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">© 2025 Law Firm – All rights reserved</p>
+        <p class="desenvolvido">Website by <a href="https://www.instagram.com/davidolabella_p/" rel="noopener noreferrer" target="_blank">Dolabella Websites</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Menu toggle functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuIcon = document.getElementById('menu-icon');
+      const menuLinks = document.getElementById('menu-links');
+
+      if (menuIcon && menuLinks) {
+        menuIcon.addEventListener('click', function() {
+          menuIcon.classList.toggle('active');
+          menuLinks.classList.toggle('active');
+        });
+      }
+      
+      // Form submission handling
+      const contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(event) {
+          event.preventDefault();
+          
+          // Here you would normally send the form data to a server
+          // For now, we'll just show an alert
+          alert('Thank you for your message. We will get back to you shortly.');
+          contactForm.reset();
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,333 @@
+.pagina-titulo {
+    margin-bottom: 6rem;
+}
+
+.titulo-container {
+    text-align: center;
+}
+
+.pagina-titulo-principal {
+    font-size: 5rem;
+    color: var(--texto-preto);
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.pagina-titulo-principal::after {
+    content: '';
+    width: 60%;
+    height: 0.4rem;
+    background-color: var(--verde);
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.breadcrumb {
+    font-size: 1.6rem;
+    color: var(--texto-preto);
+    margin-top: 2rem;
+}
+
+.breadcrumb a {
+    color: var(--verde);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.breadcrumb a:hover {
+    color: var(--verde-escuro);
+    text-decoration: underline;
+}
+
+/* Seção de introdução */
+.area-intro-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 8rem;
+}
+
+.area-intro-imagem {
+    width: 40%;
+    height: 40rem;
+    border-radius: 2%;
+    overflow: hidden;
+    box-shadow: var(--box-shadow-padrao);
+}
+
+.area-img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-color: #e0e0e0;
+}
+
+.area-intro-texto {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.area-intro-texto p {
+    font-size: 2rem;
+    line-height: 1.5;
+    color: var(--texto-preto);
+}
+/*servicos*/
+
+.servicos {
+    margin-bottom: 8rem;
+}
+
+.servicos-container h2 {
+    margin-bottom: 5rem;
+}
+
+.servicos-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.servico-card {
+    background-color: var(--branco);
+    border-radius: 1rem;
+    padding: 3rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-bottom: 0.4rem solid transparent;
+}
+
+.servico-card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    border-bottom: 0.4rem solid var(--verde);
+}
+
+.servico-icon {
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+    background: var(--gradiente-verde);
+    color: var(--texto-branco);
+}
+
+.servico-icon svg {
+    width: 3rem;
+    height: 3rem;
+}
+
+.servico-card h3 {
+    font-size: 2.2rem;
+    color: var(--texto-preto);
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.servico-card p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--texto-cinza);
+    flex-grow: 1;
+}
+
+/* Responsividade */
+
+
+
+/* Legislação */
+.legislacao {
+    margin-bottom: 8rem;
+}
+
+.legislacao-container h2 {
+    margin-bottom: 5rem;
+}
+
+.legislacao-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-between;
+}
+
+.legislacao-card {
+    width: 48%;
+    background: var(--gradiente-verde);
+    color: var(--texto-branco);
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow-padrao);
+    margin-bottom: 2rem;
+}
+
+.legislacao-card h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--texto-branco);
+}
+
+.legislacao-card p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/* FAQ */
+.faq {
+    margin-bottom: 8rem;
+}
+
+.faq-container h2 {
+    margin-bottom: 5rem;
+}
+
+.faq-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.faq-item {
+    border: 0.1rem solid #e0e0e0;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 2rem;
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question h3 {
+    font-size: 2rem;
+    color: var(--texto-preto);
+}
+
+.faq-toggle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--verde);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-answer {
+    background-color: #f9f9f9;
+    padding: 0 2rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-answer p {
+    padding: 2rem 0;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    color: var(--texto-preto);
+}
+
+.faq-item.active .faq-question {
+    background-color: #f0f0f0;
+}
+
+/* Contato */
+.contato-area {
+    margin-bottom: 8rem;
+    padding: 5rem 0;
+    background-color: #f9f9f9;
+    border-radius: 1rem;
+}
+
+.contato-area-container {
+    max-width: 80rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contato-texto {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin: 3rem 0;
+}
+
+.contato-opcoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.contato-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contato-info p {
+    font-size: 1.8rem;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1200px) {
+    .servicos-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 1040px) {
+    .area-intro-container {
+        flex-direction: column;
+    }
+    
+    .area-intro-imagem, .area-intro-texto {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .servicos-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .servico-card {
+        padding: 2.5rem;
+    }
+    .pagina-titulo {
+        margin-top: -10rem;
+    }
+    .pagina-titulo-principal {
+        font-size: 4rem;
+    }
+    
+    .area-intro-container {
+        gap: 3rem;
+    }
+    
+    .legislacao-card {
+        width: 100%;
+    }
+    
+    .contato-button {
+        width: 90%;
+    }
+}
